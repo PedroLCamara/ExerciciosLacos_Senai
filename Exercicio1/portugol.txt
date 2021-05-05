@@ -1,0 +1,19 @@
+	    logico condicao= falso
+
+            escreva("Digite sua nota para que seja registrada no sistema:")
+            real nota 
+	    leia(nota)
+            
+            escreva(\n)
+
+            enquanto (condicao==falso){
+                se(nota >= 0 e nota<=10){
+                    escreva("Nota validada e registrada. Finalizando o sistema...")
+                    condicao= verdadeiro
+                }
+                senao{
+                    escreva("Nota inválida, digite novamente.")
+                    leia(nota)
+                    condicao= falso
+                }
+            }

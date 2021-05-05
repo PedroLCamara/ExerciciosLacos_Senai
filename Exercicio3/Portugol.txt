@@ -1,0 +1,91 @@
+            logico denovo = falso
+            faça
+            {
+                logico nomeCondicao = falso
+                logico idadeCondicao = falso
+                logico salarioCondicao = falso
+                logico estadoCivilCondicao = falso
+               enquanto(nomeCondicao==falso){
+                    escreva("Digite seu nome")
+                    caracter nome
+		    leia(nome)
+                    se(nome==""){
+                        escreva("Nome inválido, digite novamente.")
+                        nomeCondicao = falso
+                        escreva(\n)
+                    }
+                    senao{
+                        nomeCondicao = verdadeiro
+                        escreva (\n)
+                    }
+               }
+               enquanto(idadeCondicao==falso){
+                    escreva("Digite sua idade")
+                    inteiro idade
+		    leia(idade)
+                    se(idade>=0 e idade<=150){
+                        idadeCondicao= verdadeiro
+                        escreva (\n)
+                    }
+                    senao{
+                        escreva("Idade inválida, digite novamente.")
+                        idadeCondicao = falso
+                        escreva(\n)
+                    }
+               }
+               ernquanto(salarioCondicao==falso){
+                    escreva("Digite seu salário");
+                    inteiro salario
+		    leia(salario)
+                    se(salario > 0){
+                        salarioCondicao= verdadeiro
+                        escreva(\n)
+                    }
+                    senao{
+                        escreva("Salário inválido, digite novamente.")
+                        salarioCondicao = falso
+                        escreva(\n)
+                    }
+               }
+               enquanto(estadoCivilCondicao==falso){
+                    escreva("Digite seu estado civil (c/s/v/d)")
+                    caracter caracteres_minusculos estadoCivilDados
+		    leia (estadoCivilDados)
+                    caracter estadoCivil= estadoCivilDados.Pos(0,1)
+                    escolha estadoCivil
+                    {
+                        caso "c":
+                            estadoCivilCondicao= verdadeiro
+                            escreva(\n)
+                            fimescolha
+                        caso "s":
+                            estadoCivilCondicao= verdadeiro
+                            escreva(\n)
+                           fimescolha
+                        caso "v":
+                            estadoCivilCondicao= verdadeiro
+                            escreva(\n)
+                            fimescolha
+                        caso "d":
+                            estadoCivilCondicao= verdadeiro
+                            escreva(\n)
+                            fimescolha
+                        outrocaso:
+                            escreva("Estado civil inválido, digite novamente.")
+                            estadoCivilCondicao = falso
+                            escreva(\n)
+                            fimescolha
+                    }
+               }
+                escreva("Cadastro realizado. Deseja realizar outro cadastro?(s/n)")
+                caracter caracteres_minusculos resposta
+		leia(resposta)
+                se(resposta=="s"){
+                    denovo= verdadeiro
+                    escreva(\n)
+                } 
+                senao{
+                    escreva("Tudo bem. Finalizando o sistema...")
+                    denovo= falso
+                }
+            } enquanto (denovo==verdadeiro)

@@ -1,0 +1,28 @@
+bool condicao = false;
+            faça
+            {
+		logico condicao = falso
+                escreva("Digite seu nome de usuário")
+
+                caracter usuario
+		leia(usuario)
+
+                escreva(\n)
+
+                escreva("Digite sua senha. P.S: Sua senha não pode ser igual ao nome de usuário")
+                caracter senha
+		leia(senha)
+                
+                escreva(\n)
+
+                se(usuario != senha){
+                    escreva("Conta registrada, finalizando o sistema...")
+                    condicao=verdadeira
+                }
+                senao{
+                    escreva("Conta inválida. A senha deve ser diferente do nome de usuário!")
+                    condicao=falso
+                    escreva(\n)
+                }
+
+            } enquanto(condicao==falso);
