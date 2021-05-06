@@ -10,7 +10,7 @@ namespace Desafio
                 int numeroAnterior= 1;
                 int numero= numeroAnterior2 + numeroAnterior;
                 Console.WriteLine(+numero);
-                for (var i = 0; numero <= 500; i++)
+                for (var i = 0; i <= 500; i=numero)
                 {
                     numero= numeroAnterior+numeroAnterior2;
                     numeroAnterior2= numeroAnterior;

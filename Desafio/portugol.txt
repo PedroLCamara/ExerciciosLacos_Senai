@@ -2,7 +2,7 @@
                 inteiro numeroAnterior= 1
                 inteiro numero= numeroAnterior2 + numeroAnterior
                 escreva(+numero)
-                para inteiro numero de 0 ate 500 passo ++ faca
+                para inteiro i de 0 ate 500 i = numero
                 {
                     numero= numeroAnterior+numeroAnterior2;
                     numeroAnterior2= numeroAnterior;
